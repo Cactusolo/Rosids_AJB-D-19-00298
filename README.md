@@ -8,9 +8,9 @@ _Miao Sun, Ryan A. Folk, Matthew A. Gitzendanner, Pamela S. Soltis1, Zhiduan Che
 _Scripts and documentation are provided here with an assumption that users have basic knowledge of UNIX shell, R, and Python, including changing the working directory, and pointing to the input and output path to link data and properly execute the scripts. In order to fully reproduce the results in our study, high performance computing clusters ([HiPerGator](https://www.rc.ufl.edu/) at University of Florida) must be used for BAMM and RPANDA analysis._  
 
 _Here we lay out below each of our scripts based on the order of the workflow as described in the main text. All the scripts and their relative folders are descriptively named based on their primary functionalities in the analyses, and detailed under each highlighted bullet point._  
-
-<img src="./image/workingflow.png" align="center" height="750px" />  
-
+<p align="center">
+<img src="./image/workingflow.png" height="550px" />  
+</p>
 ## Datasets
 
 + **trees**  
