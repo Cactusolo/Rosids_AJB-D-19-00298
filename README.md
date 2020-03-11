@@ -9,7 +9,7 @@ _Scripts and documentation are provided here with an assumption that users have 
 
 _Here we lay out below each of our scripts based on the order of the workflow as described in the main text. All the scripts and their relative folders are descriptively named based on their primary functionalities in the analyses, and detailed under each highlighted bullet point._  
 
-<img src="./image/workingflow.png" height="450px" />  
+<img src="./image/workingflow.png" align="center" height="750px" />  
 
 ## Datasets
 
