@@ -42,7 +42,8 @@ _Here we lay out below each of our scripts based on the order of the workflow as
       _A folder with all the DR rates calculated by R script "./Scripts/DR/DR_statistic.R". DR rates from 17 subclades are retained in 9k, 20k, and 100k tagged folders, respectively. DR rate for the whole tree are kept in "whole_tree" folder. Mean Dr rate for eahc order are summarized in `csv` file under "DR" directory._
       
     - **Cucurbitaceae_Test_Case**   
-      _This folder contains four sub-folders: "Cucurbitaceae_original_subclade_tree", "Cucurbitaceae_random_sampling", "Cucurbitaceae_random_sampling_addin", and "Cucurbitaceae_representive_sampling". _  
+    
+      _This folder contains four sub-folders: "Cucurbitaceae_original_subclade_tree", "Cucurbitaceae_random_sampling", "Cucurbitaceae_random_sampling_addin", and "Cucurbitaceae_representive_sampling"._  
       
         + **Cucurbitaceae_original_subclade_tree**  
           Diversification results from one single Cucurtbitaceae tree extract from 20k-tip rosid tree, including 528 tips (_tree file in "data" folder_).  
