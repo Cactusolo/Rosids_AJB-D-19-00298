@@ -114,38 +114,23 @@ _**Note:** All the scripts here are categoried under the name of their directori
           This script evaluate MCMC convergence of BAMM runs for each order (`Order`), and also extracts summaries of `tip rates`, `mean lambda`, `rate-through-time matrices`, etc. for downstream analyses. It also saves event data as an `.rds` file for read-in efficiency.  
 
 + **Cucurbitaceae_Test_Case**  
-    - _**xxx.R**_  
-      This script is a function sourced by `ES_SIM_Test.R`; for more details and usage see this script's author's GitHub [page](https://github.com/mgharvey/ES-sim); this script is redistributed here for convenience but users are advised to check the source repository for the most up-to-date version.
-      
-    - _**xxx.R**_  
-        This script is a function sourced by `Fisse_test.R`; for more details, examples and usage, see [here](https://github.com/macroevolution/fisse); this script is redistributed here for convenience but users are advised to check the source repository for the most up-to-date version. 
-        
-    - _**xxx.R**_  
-      Run script for testing trait-dependent diversification using tip rate correlations with the continuous mean annual temperature dataset  for rosid subclades and the whole tree (see **Table 1**) 
-      
-    - _**xxx.R**_  
-      This script is used to run compared the fit of four different models: (one BiSSE-like model, one BiSSE-like null model, one HiSSE full model, and one HiSSE 2-state null model). All models and parameters are described in Table S4 (also see Supporting Information Method S3).  
-      The purpose of this analysis is to test for associations between tropicality and diversification rate, and to test for potential unobserved diversification drivers.  
+    _This folder contains four sub-folders: "Cucurbitaceae_original_subclade_tree", "Cucurbitaceae_random_sampling", "Cucurbitaceae_random_sampling_addin", and "Cucurbitaceae_representive_sampling". All the scripts under each subfolder are corresponding with data files in the four sub-folders in **Datasets** section. Generally, names for these scripts are self-explained, including BAMM configure file, slurm job submission files, some bash scripts for automation, and Rscripts for diversification analyses and post-run summary._  
+    
       
 + **Figs**  
  
-    The scripts are corresponding to Figs. 2-8 in the main text. Most are barplots and diversification rate curves from BAMM.   
+    The scripts are corresponding to Figs.2-8 in the main text. Most are barplots and diversification rate curves from BAMM.   
     
 + **misc**  
 
-    - _**summary_datalayers_tropical_nontropical_percentage.R**_  
-    This script summary species richness and distribution data, and all the temperature layers for each of 17 rosid roders (see **Table S1**).  
+    - _**Appendix_S3d.R** and **Appendix_S4.R**_  
+    These scripts are used to generate plots in Online Supplemental files --- Appendix_S3d and Appendix_S4.  
   
-    - _**rosid_17order_tmep_trop_precentage_calc.R**_  
-      This script calculates tropical and non-tropical species percentages for each of 17 rosid order (see piechart in **Fig_2**)  
+    - _**Cucurbitaceae_genus10_AW_rate_summ.R**_  
+      This script is used to summarized rates from three diversification methods, and conducting "TukeyHSD" test and some exploratory plotting (some may not used in paper) for different rates dataset from different sampling treaments (see Material and Methods section in the main text).  
       
-    - _**Fig_S3.R and FigS4.BAMM_Diversification_shifts_time.R**_  
-      These two script are used to generate two supplementary figures:  
-        1) net diversification curves through time plot with the percentage piechart of tropical and nontropical rosid species, and paleo-temperatures curves in the background (see **Fig_S3**)  
-        2) Ridge plots of the age distribution of diversification rate shift for each rosid order and boxplot shows a summary of overall ages of each diversification shift detected across all 17 orders(see **Fig_S4**).  
-      
-    - _**rosid_species_count_0-10_zone_vs_30-40_lat_zone.R and species_occ_tropical_nontropical_check.R**_  
-      Two scripts are to used respond reviewers' questions about 1) species richness in tropical zone and temperate zone, respectively; 2) how many species has their occurance data both ranging in tropical and non-tropical zones.  
+    - _**get_crown_age.R**_  
+      This script is used to extract ages of major rosid clade (see Fig. 2).  
       
     
 ## Requirements
