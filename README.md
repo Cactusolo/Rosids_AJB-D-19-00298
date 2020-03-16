@@ -93,7 +93,7 @@ _**Note:** All the scripts here are categoried under the name of their directori
     
 + **BAMM**   
 
-  Given different sampling sclaes (9k-, 20k-, and 100k-tip), it's hard for BAMM to reach MCMC converge from a single run, even we already downsized the whole tree into subclades. Hence multiple runs were conducted for each large-size clade of each datasets. In the end, we concatenate event data from each run for each order and only keeps one header using the scirpts below.  Most of the scripts can be both applied to post-run analyses for BAMM under both "BD" and "PB" models, except configure files for BAMM runs.
+    _Given different sampling sclaes (9k-, 20k-, and 100k-tip), it's hard for BAMM to reach MCMC converge from a single run, even we already downsized the whole tree into subclades. Hence multiple runs were conducted for each large-size clade of each datasets. In the end, we concatenate event data from each run for each order and only keeps one header using the scirpts below.  Most of the scripts can be both applied to post-run analyses for BAMM under both "BD" and "PB" models, except configure files for BAMM runs._
 
     - _**Run_priors.sh**_  
       This bash script is used for “setBAMMpriors” in BAMM analyses; combining information from `rosid_17_order_sampling_fraction.csv` and `write_prior.R`  
@@ -109,27 +109,28 @@ _**Note:** All the scripts here are categoried under the name of their directori
     - _**Run_BAMM_config_setup.sh**_  
       This bash script will replace parameter templates (above; denoted XXX) with specific values (`rosid_17_order_sampling_fraction.csv`) corresponding to each rosid order, as well as parameters produced by `Run_priors.sh` script. After this step, the BAMM configure file is ready to run   
          
-    - _**BAMM.sbatch**_ 
+    - _**BAMM.sbatch**_  
       Slurm job script from running BAMM including information of computational resources request.
         
-    - _**BAMM_converge_checker.R**_ 
+    - _**BAMM_converge_checker.R**_  
       This script will check the combined "mcmc" file to ensure MCMC convergence (>200 for both the number of shifts and log likelihoods).  
         
-    -_**BAMM_post-run_data_collector.sh**_  
+    - _**BAMM_post-run_data_collector.sh**_  
       This bash script will combine mcmc data and event data of each order from all the BAMM runs, respectively. It will prepare the required data files for `BAMM_postrun_analyses_Order_Batch.R` step below.  
       `combine_BAMM_eventdata.sh` has similar function, but only works for event data.  
 
-    -_**config_nrun_maker.sh**_  
+    - _**config_nrun_maker.sh**_  
       As noted in the begininng, it required multiple runs to each convergent, so if n-th run failed to converge, then (n+1)-th will launched automatically by run this bash script, with features of modifying corresponding parameters in the configure file.  
         
     - _**BAMM_postrun_analyses_Order_Batch.R**_   
-      This script evaluate MCMC convergence of BAMM runs for each order (`Order`), and also extracts summaries of `tip rates`, `mean lambda`, `rate-through-time matrices`, etc. for downstream analyses. It also saves event data as an `.rds` file for read-in efficiency.  
+      This script evaluate MCMC convergence of BAMM runs for each order (`Order`), and also extracts summaries of "tip rates"", "mean lambd", "rate-through-time matrices", etc. for downstream analyses. It also saves event data as an `.rds` file for read-in efficiency.  
+      
         `BAMM_analysis_clade.R` has similar function, just working on single clade.
     
-    -_**rosid_9k-20k_mean_rates_summ.R** and **rosid_100k_mean_rates_summ.R**_  
+    - _**rosid_9k-20k_mean_rates_summ.R** and **rosid_100k_mean_rates_summ.R**_  
       These two scripts are used to summarized mean median tree-wide speciation rates and tips rate from all three rosid trees.  
         
-    -_**BAMM_BD_vs_PB_sum_rate_plot.R**_  
+    - _**BAMM_BD_vs_PB_sum_rate_plot.R**_  
       This script will plot and compare the rates through time summarized from rosid 20k-tip tree under BD and PB models (also see **Appendix S3d**).  
           
 
@@ -155,16 +156,16 @@ _**Note:** All the scripts here are categoried under the name of their directori
     - _**get_crown_age.R**_  
       This script is used to extract ages of major rosid clade (see Fig. 2).  
       
-    -_**Run_config_single_clade.sh**_  
+    - _**Run_config_single_clade.sh**_  
       This script will generate and setup BAMM configure file for one single order (clade).  
       
-    -_**make_ultra.R and make_ultra.sh**_  
+    - _**make_ultra.R and make_ultra.sh**_  
       All the trees are dated, and ultrametric, but different OSs have different convents of round up maximum digits for the branch length info. Hence these two scripts will work together to address this issue, making trees ultrametric to facilitate downstream diversification analyses.  
       
-    -_**subclade_extract_V2.sh**_  
+    - _**subclade_extract_V2.sh**_  
       By providing a larger tree and a list of two tips used as most recent comment ancester (MRCA) to defined a clade, this bash script will extract the clade using phyx (make sure [Phyx](https://github.com/FePhyFoFum/phyx) is installed).  
       
-    -_**summary_rate.sh**_  
+    - _**summary_rate.sh**_  
       This script will summarize "Speciation Rate" and "Tip Rate" of each rosid order into one table (also see "./Scripts/BAMM/rosid_100k_mean_rates_summ.R" and "./Scripts/BAMM/rosid_9k-20k_mean_rates_summ.R").  
       
 
