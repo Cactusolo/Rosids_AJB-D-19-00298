@@ -1,0 +1,5 @@
+#Step1 generate random trees
+run `Rscript tree_generater.R`
+#Step2 using a loop to run through addining tips via pytoy in "tree_addin.sh" script
+run `	bash tree_addin.sh $tree $file` in loop manner
+#Step3 mv to results folder, and rename the tree
