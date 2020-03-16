@@ -114,7 +114,7 @@ _**Note:** All the scripts here are categoried under the name of their directori
           This script evaluate MCMC convergence of BAMM runs for each order (`Order`), and also extracts summaries of `tip rates`, `mean lambda`, `rate-through-time matrices`, etc. for downstream analyses. It also saves event data as an `.rds` file for read-in efficiency.  
 
 + **Cucurbitaceae_Test_Case**  
-    _This folder contains four sub-folders: "Cucurbitaceae_original_subclade_tree", "Cucurbitaceae_random_sampling", "Cucurbitaceae_random_sampling_addin", and "Cucurbitaceae_representive_sampling". All the scripts under each subfolder are corresponding with data files in the four sub-folders in **Datasets** section. Generally, names for these scripts are self-explained, including BAMM configure file, slurm job submission files, some bash scripts for automation, and Rscripts for diversification analyses and post-run summary._  
+    _This folder contains four sub-folders: "Cucurbitaceae_original_subclade_tree", "Cucurbitaceae_random_sampling", "Cucurbitaceae_random_sampling_addin", and "Cucurbitaceae_representive_sampling". All the scripts under each subfolder are corresponding with data files in the four sub-folders in **Datasets** section. Generally, names for these scripts are self-explained, including random trees generation, BAMM configure file, slurm job submission files, some bash scripts for automation, and Rscripts for diversification analyses and post-run summary._  
     
       
 + **Figs**  
