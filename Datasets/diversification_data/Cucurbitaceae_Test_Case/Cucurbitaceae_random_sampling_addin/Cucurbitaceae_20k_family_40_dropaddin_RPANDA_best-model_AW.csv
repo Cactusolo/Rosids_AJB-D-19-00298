@@ -1,0 +1,5 @@
+"Clade","Model","lamda","AICc","treatment","AW"
+"Cucurbitaceae_5g_10_9","bcst.dcst",0.37997984987499,3015.99949885666,"Cucurbitaceae_5g_10",0.997209249868841
+"Cucurbitaceae_5g_30_1","bvar.dvar",0.172916100449649,3296.83130679749,"Cucurbitaceae_5g_30",0.959468410823145
+"Cucurbitaceae_5g_50_7","bvar.dvar",0.157069971047088,3381.67364502077,"Cucurbitaceae_5g_50",1
+"Cucurbitaceae_5g_75_2","bvar.dvar",0.0965846518104338,3276.42327708161,"Cucurbitaceae_5g_75",1

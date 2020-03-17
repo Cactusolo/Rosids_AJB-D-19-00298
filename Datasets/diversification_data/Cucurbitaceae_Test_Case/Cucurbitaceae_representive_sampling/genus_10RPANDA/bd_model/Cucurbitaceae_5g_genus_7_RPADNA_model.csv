@@ -1,0 +1,10 @@
+Clade,Model,lamda,AICc
+Cucurbitaceae_5g_genus_7,bcst.d0,0.219375,399.843257455345
+Cucurbitaceae_5g_genus_7,bcst.dcst,0.420819562659308,398.147103427477
+Cucurbitaceae_5g_genus_7,bvar.d0,0.299833534607967,394.986787048276
+Cucurbitaceae_5g_genus_7,bvar.l.d0,0.278670672370353,395.472175755171
+Cucurbitaceae_5g_genus_7,bvar.dcst,0.299789931732034,397.213058254232
+Cucurbitaceae_5g_genus_7,bvar.l.dcst,0.278761185261134,397.698474922102
+Cucurbitaceae_5g_genus_7,bcst.dvar,0.219630082086882,404.215926244087
+Cucurbitaceae_5g_genus_7,bcst.dvar.l,0.261018847295322,397.363715106026
+Cucurbitaceae_5g_genus_7,bvar.dvar,0.299939360425524,399.523335216098

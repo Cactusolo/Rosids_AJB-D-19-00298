@@ -1,0 +1,5 @@
+"Trees","Model","lamda","AICc","AW"
+"Cucurbitaceae_5g_0.1","bvar.dcst",0.468794579,2595.680187,0.999947304593289
+"Cucurbitaceae_5g_0.3","bcst.dcst",0.547130952,2076.025367,0.998483800684269
+"Cucurbitaceae_5g_0.5","bcst.dcst",0.628294704,1539.342032,0.927389550125075
+"Cucurbitaceae_5g_0.75","bcst.dcst",0.7263665,822.3056229,0.50815931178209
