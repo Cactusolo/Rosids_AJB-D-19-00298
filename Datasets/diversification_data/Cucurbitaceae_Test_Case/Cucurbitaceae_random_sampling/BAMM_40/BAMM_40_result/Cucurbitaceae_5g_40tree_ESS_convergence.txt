@@ -1,2 +1,0 @@
-Tree_name,LogLik,N_shift
-"Cucurbitaceae_5g_75_9_drop",206.972073010612,209.75742972517
