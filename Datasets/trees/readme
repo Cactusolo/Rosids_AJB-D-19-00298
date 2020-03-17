@@ -1,0 +1,6 @@
+
+Note that some old names used in our scripts, since some analyses have already done before we shape this paper.
+
+rosids_9k-tip.tre == rosids_4g.tre
+rosids_20k-tip.tre == rosids_5g.tre
+rosids_100k-tip.tre == rosids_otl.tre
