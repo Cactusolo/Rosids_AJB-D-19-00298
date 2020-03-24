@@ -186,4 +186,4 @@ _**Note:** All the scripts here are categoried under the name of their directori
 _**If you found this repository useful, please cite our work and/or this repo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3725026.svg)](https://doi.org/10.5281/zenodo.3725026).**_
 
 Cite as:  
-Sun et al. (2020, March 17). Cactusolo/Rosids_AJB-D-19-00298 v1.0.1 (Version v1.0.1). Zenodo. http://doi.org/10.5281/zenodo.3725026.
+Sun et al. (2020, March 24). Cactusolo/Rosids_AJB-D-19-00298 v1.0.3 (Version v1.0.3). Zenodo. http://doi.org/10.5281/zenodo.3725026.
